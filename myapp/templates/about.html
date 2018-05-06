@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock %} {% block content %}
+    <h1>About</h1>
+    <ol>
+        <li>{{ profile.firstname }}</li>
+        <li>{{ profile.lastname }}</li>
+    </ol>
+    <ul>
+        {% for project in projects %}
+            <li>{{ project }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
